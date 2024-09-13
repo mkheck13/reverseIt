@@ -12,3 +12,4 @@ C:\Users\mkhec\Documents\CodeStack 24-25\Combine 24-25\week 2\reverseIt\obj\Debu
 C:\Users\mkhec\Documents\CodeStack 24-25\Combine 24-25\week 2\reverseIt\obj\Debug\net8.0\reverseIt.pdb
 C:\Users\mkhec\Documents\CodeStack 24-25\Combine 24-25\week 2\reverseIt\obj\Debug\net8.0\reverseIt.genruntimeconfig.cache
 C:\Users\mkhec\Documents\CodeStack 24-25\Combine 24-25\week 2\reverseIt\obj\Debug\net8.0\ref\reverseIt.dll
+C:\Users\mkhec\Documents\CodeStack 24-25\Combine 24-25\week 2\reverseIt\obj\Debug\net8.0\reverseIt.sourcelink.json

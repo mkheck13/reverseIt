@@ -37,6 +37,7 @@ while (playAgain)
         }
         else if (stringIntCheck?.ToLower() == "int")
         {
+ // number/int reverse
             bool isNum = Int32.TryParse(Console.ReadLine(), out userNum);
 
             while (true)
@@ -59,6 +60,9 @@ while (playAgain)
                 }
             }
 
+        }else{
+            Console.Clear();
+            Console.WriteLine("That was not 'int' or 'string', try that again.");
         }
     }
 
@@ -67,7 +71,7 @@ while (playAgain)
 
 
 
-
+// plat again loop
     bool yesNo = true;
 
     while (yesNo == true)
@@ -125,7 +129,7 @@ while (playAgain)
 
 
 
-// number/int reverse
+
 
 
 
