@@ -5,13 +5,16 @@ using System.ComponentModel.DataAnnotations;
 bool playAgain = true;
 string breakLine = "----------------------------------------------------------------";
 
-Console.Clear();
+
 
 
 while (playAgain)
 {
+    Console.Clear();
+    Console.WriteLine(breakLine);
     Console.WriteLine("Today we are going to do some reversing.");
     Console.WriteLine("I'm going to need you to choose either 'string' or 'int'");
+    Console.WriteLine(breakLine);
 
     bool intString = true;
     string userWord;
@@ -32,46 +35,55 @@ while (playAgain)
             {
                 revWord += userWord[i];
             }
+            Console.Clear();
+            Console.WriteLine(breakLine);
             Console.WriteLine($"Original: {userWord} Reversed: {revWord}");
-            break;
+            Console.WriteLine(breakLine);
+            intString = false;
         }
         else if (stringIntCheck?.ToLower() == "int")
         {
- // number/int reverse
+            // number/int reverse
+            Console.Clear();
+            Console.WriteLine(breakLine);
+            Console.WriteLine("Please enter a sequence of numbers that are above 0 to be reversed.");
+            Console.WriteLine(breakLine);
             bool isNum = Int32.TryParse(Console.ReadLine(), out userNum);
 
-            while (true)
+            while (isNum == false)
             {
-                if (!isNum)
-                {
-                    Console.WriteLine("That doesn't seem to be a number.");
-                    isNum = Int32.TryParse(Console.ReadLine(), out userNum);
-                }
-                else
-                {
-                    while (userNum > 0)
-                    {
-                        result = (result * 10) + (userNum % 10);
-                        userNum = userNum / 10;
-                    }
-                    Console.WriteLine(userNum + result);
-                    break;
+                Console.Clear();
+                Console.WriteLine(breakLine);
+                Console.WriteLine("That doesn't seem to be a number.");
+                Console.WriteLine(breakLine);
+                isNum = Int32.TryParse(Console.ReadLine(), out userNum);
 
-                }
             }
-
-        }else{
+            int ogNum = userNum;
+            while (userNum > 0)
+            {
+                result = (result * 10) + (userNum % 10);
+                userNum = userNum / 10;
+                
+            }
             Console.Clear();
+            Console.WriteLine(breakLine);
+            Console.WriteLine($"Original: {ogNum} Reversed: {result}");
+            Console.WriteLine(breakLine);
+            intString = false;
+
+        }
+        else
+        {
+            Console.Clear();
+            Console.WriteLine(breakLine);
             Console.WriteLine("That was not 'int' or 'string', try that again.");
+            Console.WriteLine(breakLine);
         }
     }
 
-
-
-
-
-
-// plat again loop
+    // plat again loop
+    Console.WriteLine("Play again. 'yes' or 'no'.");
     bool yesNo = true;
 
     while (yesNo == true)
@@ -101,23 +113,6 @@ while (playAgain)
             Console.WriteLine(breakLine);
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 
