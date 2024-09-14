@@ -8,6 +8,7 @@
 
 ### Peer Review:  
 
-**Name**: 
+**Name**: Santiago Jesus Montanez
 
-**Comments**: 
+**Comments**: Your code is well made. I noticed you used a .Lower() method, it seems very practical.
+I tried it out a few times to attempt to break it, but I couldn't, so I think the code is solid. Great work :+1:
